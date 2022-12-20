@@ -1,0 +1,15 @@
+1. cuando un contenedor sobresale a otro contenedor,    debemos poner la propiedad 
+   overflow: hidden; 
+   en el contenedor padre.
+
+2. mover una imagen desde la izquierda hasta la    derecha podemos usar   text-align: right;
+
+3. para centrar un elemento   
+   margin: 0 auto;
+
+4. Cuando el container es más pequeño que el    contenido, el contenido no se mira centrado, para    solucionar esto debemos usar un     
+   max-width: 900px;
+
+5. 
+
+

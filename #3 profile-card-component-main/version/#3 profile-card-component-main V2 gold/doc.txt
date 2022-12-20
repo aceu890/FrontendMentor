@@ -1,0 +1,12 @@
+1. span es un elemento en linea, mientras que el div es en bloque.
+
+2. al container se le pone position: relative (a la caja padre), y al elemento hijo se pone position: absolute, esto con el fin de poder mover la imagen libremente.
+
+3. cuando trabajamos con diferentes vistas a la hora de maquetar, es mejor trabajar con porcentajes, para poder centrar la caja a la hora de cambiar de vista.
+
+4. overflow: hidden sirve para esconder los bordes
+
+5. para centrar muchas veces tenemos que usar     align-items: center;
+height: 90px;
+
+6. 
