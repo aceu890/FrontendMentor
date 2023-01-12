@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root { 
+    --Cyan: hsl(179, 62%, 43%);
+    --Light_Cyan: hsl(179, 27%, 52%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Light_Gray);
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+
+/* ========================================= */
+/* ================MOBILE VIEW============== */
+/* ========================================= */
+
+.main_container {
+    background-color: white;
+    width: 313px;
+    height: 730px;
+    margin: 70px auto 70px;
+    border-radius: 8px;
+    overflow: hidden; /*esconde lo sobrante*/
+}
+
+/* ================OUR COMMUNITY================== */
+.our_community {
+    padding: 8px 24px 24px 24px;
+    height: 270px;
+    box-sizing: border-box;
+}
+.our_community h2.title {
+    font-size: 1.2em;
+    color: var(--Cyan);
+}
+.our_community h2.promo{
+    color: var(--Bright_Yellow);
+    font-size: 1em;
+    margin: 25px 0 10px 0;
+}
+.our_community p {
+    color: var(--Grayish_Blue);
+    font-size: 0.86em;
+    line-height: 27px;
+    margin-top: 16px;
+}
+
+/* ================MONTHLY SUBSCRIPTION=========== */
+
+.monthly_subscription {
+    background-color: var(--Cyan);
+    padding: 12px 24px 24px 24px;
+    height: 230px;
+    box-sizing: border-box;  /*respeta el tamaño del height*/
+    color: var(--Light_Gray);
+}
+.monthly_subscription h2 {
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+.price {
+    font-size: 2em;
+    font-weight: 700;
+}
+.monthly_subscription p {
+    margin-top: 8px;
+}
+button {
+    margin-top: 14px;
+    background-color: var(--Bright_Yellow);
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    border-style: none;
+    color: var(--Light_Gray);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ================WHY US===================== */
+.why_us {
+    background-color: var(--Light_Cyan);
+    padding: 8px 24px 24px 24px;
+    height: 230;
+    box-sizing: border-box;
+    color: var(--Light_Gray);
+}
+
+.why_us h2 {
+    font-size: 18px;
+}
+li {
+    list-style-type: none;
+    margin-left: -40px;
+    font-size: 0.85em;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+/* ================FOOTER================== */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ========================================= */
+/* ================DESKTOP VIEW============= */
+/* ========================================= */
+@media only screen and (min-width: 680px) {
+    .main_container {
+        width: 636px;
+        height: 476px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 160px auto 100px;
+    }
+    .our_community {
+        grid-column: 1/3;
+        padding: 20px 35px 35px 35px;
+        height: 218px;
+    }
+    .our_community h2.title {
+        font-size: 1.45em;
+    }
+    .our_community h2.promo {
+        font-size: 1.1em;
+    }
+    .our_community p {
+        font-size: 1em;
+        line-height: 27px;
+        margin-top: 8px;
+    }
+    .monthly_subscription {
+        padding: 20px 40px 40px 40px;
+        height: 258px;
+    }
+    .monthly_subscription h2 {
+        font-size: 1.1em;
+    }
+    .monthly_subscription p {
+        font-size: 0.95em;
+    }
+    .why_us {
+        height: 258px;
+        padding: 20px 40px 40px 40px;
+    }
+}
